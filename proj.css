@@ -1,0 +1,654 @@
+*{
+       margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --background: rgb(24 , 24 , 24);
+    --secound-background : rgb(21 , 21 , 21);
+}
+body{
+    min-height: 100vh;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 0 , 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    z-index: 100;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    font-size: larger;
+    
+}
+
+nav ul a{
+    color: white;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+   
+}
+
+nav ul a:hover{
+    opacity: 1;
+    
+   
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+    
+}
+span{
+    background: wheat;
+    background-clip:text ;
+    color: transparent;
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+.btn{
+    padding: 0.5em 1em;
+    background-color: transparent;
+    color: wheat;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    border: 2px solid wheat;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: inline;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+    
+}
+.btn:hover{
+    background-color: wheat;
+    color: rgba(15, 15, 0 , 0.5);
+    border-color: darkgrey;
+    transition: 0.5s ease-in-out;
+}
+section{
+    min-height: 100vh;
+   margin-left: 10%;
+   margin-right: 15%;
+}
+#home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    color: black;
+}
+#home img{
+    width: 30vw;
+    margin-bottom: 20%;
+    margin-top: 3em;
+    filter : grayscale(100%);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 0.5em;
+    max-width: 600px;
+    padding-right: -50%;  
+    font-size: 1.4rem;  
+}
+.btn0{
+    padding: 0.5em 1em;
+    background-color: transparent;
+    color: wheat;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    border: 2px solid wheat;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: inline;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+}
+.btn0:hover{
+    background-color: wheat;
+    color: rgba(15, 15, 0 , 0.5);
+    border-color: darkgrey;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+.skills i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+#about{
+
+    background-color: darkgrey;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;  
+    min-height: 100px;  
+    
+    
+}
+#aboutBox{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    ;
+}
+#aboutInfo{
+    justify-items: left;
+    text-align: left;
+    font-weight: 500;
+    width: 50%;
+    font-size: 1.2rem;
+}
+#aboutInfo h1{
+   font-size: 4rem;
+   margin-bottom: 1rem;
+   color: wheat;
+}
+#aboutInfo p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns */
+    grid-gap: 20px; 
+    padding: 20px; /* Optional padding */
+    margin: 0 auto; /* Center the section */
+    width: auto; /* Adjust the width to the content */
+    height: auto; /* Adjust the height to the content */
+    
+
+}
+.icon-frame0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: grey;
+    text-align: center;
+    height: 8rem;
+    width: 8rem;
+    color: whitesmoke;
+}
+.icon-frame0 :hover{
+    background-color: wheat;
+    color: black;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+    border: 4px solid #ccc;
+}
+.icon-frame0 i {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.icon-frame0 p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+#projects{
+    display: flex;
+}
+#porjects h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: wheat;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.works{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; 
+    position: relative;
+    overflow: hidden;
+}
+.icon-frame1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: grey;
+    text-align: center;
+    height: 15rem;
+    color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+    transition: ease-in-out 0.3s;
+}
+
+.icon-frame1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter : grayscale(20%);
+}
+
+.icon-frame1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
+    color:   
+ white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s  ease-in-out;
+    
+}
+.icon-frame1:hover{
+    transform: scale(1.1);
+    transition: ease-out 0.3;
+    cursor: pointer;
+}
+
+.icon-frame1:hover .overlay {
+    opacity: 1;
+    transition: ease-out 0.3s;
+    border: 3px solid wheat;
+   
+    
+}
+#btn1{
+    padding: 0.5em 1em;
+    background-color: transparent;
+    color: wheat;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    border: 2px solid wheat;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: grid;
+    text-align: center;
+    width: fit-content;
+    justify-content: center;
+    place-self: centre;
+}
+#btn1:hover{
+    background-color: wheat;
+    color: rgba(15, 15, 0 , 0.5);
+    border-color: darkgrey;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+.viewBtn{
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.review{
+     background-color: darkgrey;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;  
+    overflow: hidden;
+   
+  
+
+}
+.review h1{
+display: flex;
+justify-content: center;
+font-size: 4rem;
+font-weight: bold;
+color: wheat;
+}
+.review h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 2rem;
+}
+#contact{
+    
+    min-height: 100px;
+
+}
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 0;
+    overflow: hidden;
+    min-height: 100px;
+    
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: wheat;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: darkgray;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 2px solid wheat;
+    transition: ease-in-out 0.3s;
+}
+
+.icon-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    /* background-color: #007BFF; Background color of the icon frame */
+    margin-right: 15px;
+    
+}
+.contact-item:hover{
+    transform: scale(1.12);
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-frame i {
+    font-size: 2.5rem;
+    color: wheat;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.center-address {
+    justify-content: center;
+}
+.footer-section {
+    text-align: center;
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+#testimonials{
+    background-color: darkgrey;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;  
+    min-height: 100px;
+
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    height: 25rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+}
+
+.card {
+    border: 2px solid wheat;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: grey;
+    transition: ease-in-out 0.3s;
+    
+}
+.card:hover{
+    transform: scale(1.12);
+    cursor: pointer;
+}
+.card h2{
+    font-size:2rem;
+    margin-top: 10%;
+}
+.user-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40%;
+    border: 2px solid wheat;
+}
+#testimonials h3{
+font-size: 4rem;
+font-weight: bold;
+justify-content: center;
+display: flex;
+color: wheat;
+}
+#testimonials p{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight:bold ;
+}
+.hamburger {
+    display: none;
+  }
+  .links{
+    display: flex;
+    list-style-type: none;
+  }
+
+@media screen and (max-width: 768px) {
+    nav{
+    
+        padding: 1em 5%;    
+    }
+    ul{
+        font-size: ;
+        gap: o.1em;
+        
+        }
+        #home{
+            display: flex;
+            flex-direction: column-reverse;
+          text-align: center;
+          align-items: center;
+            gap: 1em;
+            color: black;
+            font-size: 1.2rem;
+            
+        }
+        #home img{
+            width: 80vw;
+        }
+        .info{
+           
+            text-align: center;
+            font-size: 1rem;
+            margin-bottom: 5%;
+            }
+            #about{
+                width: 100%;;
+            }
+            #aboutBox{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-items: center;
+                width: 100%;
+            }
+            #aboutInfo h1{
+                font-size: 2.5rem;
+            }
+            #aboutInfo{
+                justify-items: center;
+                text-align: center;
+                font-weight: 500;
+                width: fit-content;
+                font-size: 1.2rem;
+            }
+            .skills{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* 3 columns */
+                grid-gap: 10px; 
+           }
+           .icon-frame0 {
+            height: 6rem;
+            width: 6rem;
+            font-size: small;
+           }
+           .icon-frame0 i {
+            font-size: 2.1rem;
+            margin-bottom: 20%;
+        }
+        .icon-frame0 p {
+            font-size: 1rem;
+            margin: 20%;
+        }
+
+        .works{
+             grid-template-columns: repeat(1, 1fr); /* 3 columns */
+            margin-top: 10%;
+}
+#testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 15%;
+   
+}
+#testimonials p{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight:bold ;
+}
+
+.icon-frame{
+    flex-direction: column;
+   
+}
+.contact-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contact-section h2{
+    font-size: 3.5rem;
+}
+.footer-section {
+    text-align: center;
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px;
+    margin-bottom: 80px;
+    font-size: 1.2rem;
+}
+.links{
+    display: none;
+    flex-direction: column;
+}
+.hamburger{
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: wheat;
+}
+.links.active{
+    display: flex;
+}
+
+}
